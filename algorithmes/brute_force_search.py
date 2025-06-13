@@ -122,9 +122,9 @@ def linear_search_pair_find_min(k: int, n: list[int], m: list[int]) -> int:
     for i in range(len(n)):
         for j in range(len(m)):
             sum_num = n[i] + m[j]
-            # if sum_num < K:
+            # if sum_num < k:
             #     continue
-            if sum_num >= K and sum_num < min_num:
+            if sum_num >= k and sum_num < min_num:
                 min_num = sum_num
 
     return min_num
